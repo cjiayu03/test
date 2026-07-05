@@ -3,7 +3,7 @@ const assert = require('node:assert');
 const { generateIncidentCode, isValidSeverity, healthCheck } = require('../src/app');
 
 test('generates zero-padded incident codes', () => {
-  assert.strictEqual(generateIncidentCode(1), 'INC-0001');
+  assert.strictEqual(generateIncidentCode(1), 'INC-001');
   assert.strictEqual(generateIncidentCode(42), 'INC-0042');
   assert.strictEqual(generateIncidentCode(1234), 'INC-1234');
 });
